@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anket Sitesi</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<style>
+
+
+</style>
+    
+</head>
+<body>
+  
+    <header class="vertical-center">
+      <div class="container">
+        <a href="index.html"><i class="fa-solid fa-house-chimney"></i></a>
+            <a href="index.html">Anasayfa</a>
+            <a href="iletisim.html"><i class="fa-solid fa-phone"></i></a>
+            <a href="iletisim.html">İletişim</a>
+            <a href="hakkımızda.html"><i class="fa-solid fa-circle-info"></i></a>
+            <a href="hakkımızda.html">Hakkında</a> 
+            <button onclick="openSingUpPanel()" class="link-button" style="float: right; margin-left: 15px;">Kaydol</button> 
+            <button onclick="openLoginPanel()" class="link-button" style="float: right; margin-left: 15px;">Giriş Yap</button>
+      </div>
+    
+    </header>
+    <main>
+    <h1 class="baslik1">Hemen Üye Ol, Anketini Hazırlamaya Başla!</h1>
+    <h2 class="yazi1">ister geri bildirimler topluyor olun, ücretsiz sürükle-bırak anket oluşturucumuz ile ilgi çekici </h2>
+    <h2 class="yazi1">online anketler oluşturun. Anında yanıtlar toplamaya başlamak için yalnızca kendi sorularınızı</h2> 
+    <h2 class="yazi1">ekleyin, koşullu mantık ayarlayın ve özel anketinizi online paylaşın.</h2>
+   
+  <div class="box">
+      <button onclick="openLoginPanel()" class="buyuk-buton">Anketinizi Hazırlayın</button>
+  </div>
+  
+
+  <div class="login-panel" id="loginPanel">
+      <form class="login-form" id="login-form">
+          <span class="close" onclick="closeLogin()">&times;</span>
+          <h3>Giriş Yap</h3>
+          <label for="username">Kullanıcı Adı</label><br>
+          <input type="text" id="username" name="username" required><br>
+          <label for="password">Şifre</label><br>
+          <input type="password" id="password" name="password" required ><br>
+          <button type="submit" class="submit-btn">Giriş Yap</button><br>
+          <p>Hesabınız yok mu ?<p onclick="openSingUpPanel()" class="open-singUp-text">Kaydol</p></p>
+      </form>   
+  </div>
+  <div class="singup-panel" id="singUpPanel">
+    <form class="singup-form" id="singUp-form"> 
+    <span class="close" onclick="closeSingUp()">&times;</span>
+    <h3>Hemen Kaydol</h3>
+    <label for="name">Adınız</label><br>
+    <input type="text" id="name" name="name" required><br>
+    <label for="email">E-Posta</label><br>
+    <input type="email" id="email" name="email" required><br>
+    <label for="password">Şifre</label><br>
+    <input type="password" id="password" name="password" required><br>
+    <button type="submit" class="submit-btn">Kaydol</button><br>
+    <p>Zaten bir hesabınız var mı ?<p onclick="openLoginPanel()" class="open-login-text">Giriş</p></p>
+   
+  
+    </form>
+  </div>
+
+  <div>
+
+  </div>
+  
+  <div>
+    <h1 class="baslik1">Anket Şablonlarımızı Keşfedin</h1>
+    <p class="yazi">Anketinizi sıfırdan yaratmak istemiyorsanız hazır olan anket <br>şablonlarımızdan birini seçin.Yapmanız gereken tek şey kendi sorularınızı <br>eklemek </p>
+  </div>
+
+
+</main>
+
+
+
+<footer>
+  <div class="footer-content">
+    <div class="footer-links">
+      <ul>
+        <li><a href="index.html">Anasayfa</a></li>
+        <li><a href="hakkımızda.html">Hakkımızda</a></li>
+        <li><a href="iletisim.html">İletişim</a></li>
+      </ul>
+    </div>
+    <div class="footer-contact">
+      <p>İletişim bilgileri </p>
+      <p>Adres: Gümüşhane Üniversitesi Yazılım mühendisliği</p>
+      <p><a href="mailto:217231054@ogr.gumushane.edu.tr">Email: 217231054@ogr.gumushane.edu.tr</a></p>
+      <p><a href="mailto:217231054@ogr.gumushane.edu.tr">Email: 217231012@ogr.gumushane.edu.tr</a></p>
+      <p>Telefon: 1234567890</p>
+    </div>
+  </div>
+</footer>
+
+  <script src="index.js"></script>
+</body>
+</html>
